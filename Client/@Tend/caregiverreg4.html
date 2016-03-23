@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   		<title>@Tend</title>
+      	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+      	<link rel="stylesheet" href="CSS/styles.css"/>
+      	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+      	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		 <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+		<script src="javascript/caregiver.js"></script>
+		<script src="javascript/main.js"></script>
+		<script src="javascript/signup.js"></script>
+   </head>
+   <body class="body-class">
+		<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+			 <a href="login.html" class="login-btn" style="color:black;">Sign In</a>
+			  </nav>
+			</div>
+			<nav class="content">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" alt="image not found" class="close-menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul">
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="search-sched-div" style="height:445px;">
+				<h2 class="register-heading2"> Caregiver Registration - Contact Details</h2> <br/>
+				<form method="post" id="doneCaregiverreg">
+					<ul class="register-list">
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Mobile No</label>
+							</div>
+							<div class="reg-long-field2" >
+								<input class="form-input" type="tel" pattern="[0-9]{10}" title="Mobile Number" placeholder="Enter your 10 digit number" name="mobile" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Home No</label>
+							</div>
+							<div class="reg-long-field2" >
+								<input class="form-input" type="tel" pattern="[0-9]{10}" title="Home Number" placeholder="Enter your 10 digit number" name="home_phone">
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label2">Address</label>
+							</div>
+							<div class="reg-long-field3" >
+								<ul class="reg-list-address">
+									<li>
+										<input class="form-input" type="text" placeholder="Street Address" name="street" required>
+									</li>
+									<li>
+										<input class="form-input" type="text" placeholder="Apt/Suite/Unit etc." name="apt_no" required>
+									</li>
+									<li>
+										<input class="form-input" type="text" placeholder="City" name="city" required>
+									</li>
+									<li>
+										<input class="form-input" type="text" placeholder="State" name="state" required>
+										<input class="form-input" type="text" pattern="[0-9]{4,}" placeholder="Zipcode" name="zipcode" required>
+									</li>
+								</ul>	
+							</div>
+						</li>
+						</ul>
+						<div class="reg1-button" style="position: relative; top: 20px;">
+							<!-- <input class="button-cont" type="submit" value="Continue"> -->
+							<!--<a href="doneregistration.html" type="submit" class="reg-cont-button">Done</a>-->
+							<input class="reg-cont-button" type="submit" id="submit" value="Submit">
+							<a href="caregiverreg3.html"  class="reg-cancel-button">Back</a>
+<!-- 							<input class="button-cancel" type="button" value="Cancel"> -->
+						</div>	
+					
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

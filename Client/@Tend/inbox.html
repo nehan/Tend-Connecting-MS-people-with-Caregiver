@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			@Tend
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+		<link rel="stylesheet" href="CSS/styles.css"/>
+		<link rel="stylesheet" href="CSS/admin.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+		<script src ="javascript/authorization.js"></script>
+		<script type="text/javascript" src="javascript/inbox.js"></script>
+	
+			</head>
+	<body class="body-class-user">
+		<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+					<a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>				   
+				</div>
+			</nav>
+		</div>
+		<nav class="content-user">
+			<div>
+				<ul class="menuinline">
+					<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="close"> </a></li>
+					
+				</ul>	
+				 <ul class="menuul" style="width: 75%;    line-height: 40px;">
+				 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="image"><span id="name_span"> Welcome, Admin</span></span> </a></li>
+                        <li><a href="sysadmin.html">Manage Caregivers</a></li>
+                        <li><a href="sysadmin-MemberPage.html">Members</a></li>
+						<li><a href="#">Inbox</a></li>
+                        <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        		</ul>
+        		<ul class="menuul" style="line-height: 40px;">
+        				<li><a href="index.html">Home </a></li> 
+        				<li><a href="howitworks.html">How It Works </a></li> 
+        				<li><a href="aboutus.html">About Us </a></li> 
+        		</ul>	
+        		<ul class="menuul menuLogo">
+        			<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        		</ul>	
+		     </div>
+		</nav>  
+		<div class="later-page"> 
+		<div class="sysadmin-body">
+		<div style="float:left;Width:60%;">
+			<div class="sysyadmin-header" style="width:100%;position: relative;">
+				<h3 style="padding: 7px 19px;text-align:left;" class="h3-admin">Inbox</h3>
+			</div>
+			<!-- <div class="clear" style="clear:both"></div> -->
+			<div class="sys-admin-table" style=" overflow-y: scroll; width: 100%;">
+				<table class="admin-table" style="width: 100%;position: relative;">							
+					<thead>
+						<tr>
+						   <th class="TableColGeneral" style="text-align:left; margin-left:2px;">Name</th>
+						   <th class="TableColSkills">Type of Query</th>
+						   <th class="TableColRole">Is Member</th>
+						   <th class="TableColAction ">Action</th>
+						</tr>								
+					</thead>						 
+					<tfoot class="tableFooter">						
+					</tfoot>
+				 
+					<tbody id="inboxBody">
+						
+					</tbody>							
+				</table>				
+			</div>
+			
+		</div>	
+			<div class="mailBody" id="mailBody" style="float:right;">
+			
+			<p> This is where the message goes..............................</p>
+			</div>
+		</div>
+	</div>	
+	</body>	
+</html>

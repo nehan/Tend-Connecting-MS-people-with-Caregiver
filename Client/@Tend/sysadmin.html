@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			@Tend
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+		<link rel="stylesheet" href="CSS/styles.css"/>
+		<link rel="stylesheet" href="CSS/admin.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="javascript/sysAdmin.js"></script>
+		<script src ="javascript/authorization.js"></script>
+	
+			</head>
+	<body class="body-class-user">
+		<!-- <div class="header">
+			<img src="images/main-logo.png" alt="@Tend-Logo" class="img-logo">
+			  <nav class="nav-top">
+				<a href="#">Home</a>
+				<a href="inbox.html">Inbox </a>
+				<a href="member.html">Members</a>
+				<a href="#" class="signup"> Sign Out </a>
+			  </nav>
+		</div>
+		<div class="sysAdmin-Sidebar">
+			<div class="nav-SysAdminSideBar">
+				<ul>
+					<li>
+						<a href="#">Home</a> 
+					</li>
+					<li>
+						<a href="inbox.html">Inbox </a>
+					</li>
+					<li>
+						<a href="sysadmin-MemberPage.html">Members</a>
+					</li>
+				</ul>
+			</div>
+		</div>	 -->
+		<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+					<a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>				   
+				</div>
+			</nav>
+		</div>
+		<nav class="content-user">
+			<div>
+				<ul class="menuinline">
+					<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="close"> </a></li>
+					
+				</ul>	
+				 <ul class="menuul" style="width: 75%;    line-height: 40px;">
+				 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="profile"><span id="name_span"> Welcome, Admin</span></span> </a></li>
+                        <li><a href="#">Manage Caregivers</a></li>
+                        <li><a href="sysadmin-MemberPage.html">Members</a></li>
+						<li><a href="inbox.html">Inbox</a></li>
+                        <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        		</ul>
+        		<ul class="menuul" style="line-height: 40px;">
+        				<li><a href="index.html">Home </a></li> 
+        				<li><a href="howitworks.html">How It Works </a></li> 
+        				<li><a href="aboutus.html">About Us </a></li> 
+        		</ul>	
+        		<ul class="menuul menuLogo">
+        			<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        		</ul>	
+		     </div>
+		</nav>  
+		<div class="later-page"> 
+		<div class="sysadmin-body">
+			<div class="sysyadmin-header">
+			<h3 style="padding: 7px 19px;text-align:left" class="h3-admin">Manage Caregiver Profiles</h3>
+			</div>
+			<!-- <div class="clear" style="clear:both"></div> -->
+			<div class="sys-admin-table">
+				<table class="admin-table">							
+					<thead>
+						<tr>
+						   <th><input class="check-all" type="checkbox"></th>
+						   <th class="TableColProfile"></th>
+						   <th class="TableColGeneral" style="text-align:left">Name</th>
+						   <th class="TableColSkills">Skills Set</th>
+						   <th class="TableColGeneral">Resume</th>
+						   <th class="TableColAction ">Action</th>
+						</tr>								
+					</thead>						 
+					<tfoot class="tableFooter">
+						<tr>
+						<td colspan="6">
+								<div class="multipleActions" style="text-align:left">
+									<select name="dropdownChoice" id="dropdownChoiceId">
+										<option value="Choose">Choose an action...</option>
+										<option value="Approve">Approve</option>
+										<option value="Reject">Reject</option>
+									</select>
+									<a class="buttonApply" id="buttonApplySysAdminChoice">Apply to selected</a>
+								</div>
+								<div class="pagination">
+									<a href="#" title="First Page">« First</a><a href="#" title="Previous Page">« Previous</a>
+									<a href="#" class="number current" title="1">1</a>
+									<a href="#" class="number" title="2">2</a>
+									<a href="#" class="number" title="3">3</a>
+									<a href="#" class="number" title="4">4</a>
+									<a href="#" title="Next Page">Next »</a><a href="#" title="Last Page">Last »</a>
+								</div> <!-- End .pagination -->
+							</td>
+						</tr>
+					</tfoot>
+				 
+					<tbody id="sysAdminTableBody">
+						
+					</tbody>							
+				</table>				
+			</div>
+		</div>
+	</div>	
+	</body>	
+</html>

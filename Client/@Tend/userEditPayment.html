@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <title>
+         @Tend
+      </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	  <link rel="icon" type="image/png" href="images/main-logo-blue.png">
+      <link rel="stylesheet" href="CSS/styles.css"/>
+       <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	  <script src ="javascript/authorization.js"></script>
+      <script src="javascript/main.js"></script>
+       <script src="javascript/config.js"></script>
+       <script src="javascript/useredit.js"></script>
+   </head>
+  
+			 <body class="body-class-user">
+		
+			<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+		  </nav>
+		</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="close"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 65%;">
+					 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="profile"><span id="name_span"> Welcome, John</span></span> </a></li>
+                          	<li><a href="userlanding.html">Caregiver Search</a></li>
+							<li><a href="userviewprofile.html">View Profile</a></li>
+                            <li><a href="userCurrRqsts.html">Manage Requests</a></li>
+                            <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeUserQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="divLefttNav editnav" id="navleft">
+				<nav class="nav-side nav-edit">
+					<ul>
+						<li>
+							<a href="userEditPersonalDetails.html">Personal Info </a>
+							<hr>
+						</li>
+						
+						<li >
+							<a href="userEditContactDetails.html">Contact Info</a>
+						<hr>
+						</li>
+						
+						<li>
+							<a href="userEditEmergencyContactDetails.html">Emergency Contact</a>
+						<hr>
+						</li>
+						
+						<li  class="active">
+							<a href="userEditPayment.html"> Payment Information </a>
+						<hr>
+						</li>
+						
+						<li>
+							<a href="userEditSubscription.html" >Subscription</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="editUserInfoContainer">
+				<a href="#" id="leftmenu"><img src="images/arrow.png" style=" width: 40px; height: 40px; float: left;" alt="arrow"></a>
+				<h4 class="register-heading" style="left: 27%;"> Edit Payment Details </h4> <br/>
+			    <p class="emergency-h3"> These are your saved credit card details.</p>
+				<ul class="userreq-register-list emergency" id="paymentul">
+					
+				<li><div class="line-top" style="left: 0;"></div></li>
+					<li style="width: 120px;left:10px;">
+						<label class="lblemergency">Card Type </label>
+				    </li>
+				    	
+				    <li style="width:100px;">
+				    	<label class="lblemergency">Card No.</label>
+				    </li>
+
+				    <li style="width: 110px;">
+				    	<label class="lblemergency">Expiry</label>
+				    </li>
+
+			      <li><div class="line-bottom"  style="left: 0;"></div></li>
+				</ul>
+
+				<div class="dataforPayment">
+				</div>	
+			
+				<form  method="post" id="cardDetailssubmit">  
+					<ul class="register-list ulemergency" id="cardDetails">
+						<li>
+							<div class="reg-align-left2">
+								<label class="register-label">Card Type</label>
+							</div>	
+							<div class="reg-long-field2" >
+								<select class="form-input drop-down" id="cardtype">
+									<option value="0" selected="selected" label="visa">Visa</option>
+									<option value="1" label="mastercard">MasterCard</option>
+									<option value="2" label="Amex">Amex</option>
+								</select>
+							</div>
+						</li>	
+						<li>
+							<div class="reg-align-left2">
+								<label class="register-label">Card Number</label>
+							</div>	
+							<div class="reg-long-field" >
+								<input class="form-input" type="text" placeholder="Enter Card Number" name="cardnumber" id="cardnumber">
+							</div>
+						</li>	
+						<li>
+							<div class="reg-align-left2">
+								<label class="register-label">Expiry Date</label>
+							</div>	
+							<div class="reg-long-field" >
+								<input class="form-input" type="text" placeholder="Enter expiry like MM/YYYY" name="expiry" id="expiry">
+							</div>
+						</li>	
+						<li>
+							<div class="reg-align-left2">
+								<label class="register-label">CVV Number</label>
+							</div>	
+							<div class="reg-long-field" >
+								<input class="form-input" type="text" placeholder="4 digit number" name="cvv" id="cvv">
+							</div>
+						</li>	
+						
+						<div class="reg1-button">
+							<!-- <input class="button-cont" type="submit" value="Continue"> -->
+							<a href="#" class="reg-cont-button" id="savePaymentData">Save</a>
+							<a href="userEditPayment.html" class="reg-cancel-button">Cancel</a>
+
+<!-- 							<input class="button-cancel" type="button" value="Cancel"> -->
+						</div>			
+					</ul>
+				</form>
+			</div>
+		</div> 
+
+   </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <title>
+         @Tend
+      </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	  <link rel="icon" type="image/png" href="images/main-logo-blue.png">
+      <link rel="stylesheet" href="CSS/styles.css"/>
+       <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	  <script src ="javascript/authorization.js"></script>
+      <script src="javascript/main.js"></script>
+       <script src="javascript/config.js"></script>
+         <script src="javascript/useredit.js"></script>
+   </head>
+   	 <body class="body-class-user">
+		<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+		  </nav>
+		</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width:65%;">
+					 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="profile"><span id="name_span"> Welcome, John</span></span> </a></li>
+                          	<li><a href="userlanding.html">Caregiver Search</a></li>
+							<li><a href="userviewprofile.html">View Profile</a></li>
+                            <li><a href="userCurrRqsts.html">Manage Requests</a></li>
+                            <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeUserQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="divLefttNav editnav" id="navleft">
+				<nav class="nav-side nav-edit">
+					<ul>
+						<li>
+							<a href="userEditPersonalDetails.html">Personal Info </a>
+								<hr>
+						</li>
+					
+						<li class="active">
+							<a href="userEditContactDetails.html">Contact Info</a>
+						<hr>
+						</li>
+						
+						<li>
+							<a href="userEditEmergencyContactDetails.html">Emergency Contact</a>
+						<hr>
+						</li>
+						
+						<li>
+							<a href="userEditPayment.html"> Payment Information </a>
+						<hr>
+						</li>
+						
+						<li>
+							<a href="userEditSubscription.html" >Subscription</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="editUserInfoContainer">
+				<a href="#" id="leftmenu"><img src="images/arrow.png" style=" width: 40px; height: 40px; float: left;" alt="arraow"></a>
+				<h4 class="register-heading" style="left: 27%;"> Edit Contact Details </h4> <br/>
+				
+				<form method="post" id="user_edit_contact">
+					<ul class="register-list">
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Mobile Number</label>
+							</div>
+							<div class="reg-long-field2" >
+								<input class="form-input" type="tel" pattern="[0-9]{10}" name="mobile" title="Mobile Number" placeholder="Enter your 10 digit number" value="333-444-6666" id="mobile" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Home Number</label>
+							</div>
+							<div class="reg-long-field2" >
+								<input class="form-input" type="tel" pattern="[0-9]{10}" name="home" title="Home Number" placeholder="Enter your 10 digit number" value="309-444-6666" id="home">
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label2">Address</label>
+							</div>
+							<div class="reg-long-field3" >
+								<ul class="reg-list-address">
+									<li>
+										<input class="form-input" type="text" placeholder="Street Address" id="street" name="street" required>
+									</li>
+									<li>
+										<input class="form-input" type="text" placeholder="Apt/Suite/Unit etc." id="apt" name="apt" required>
+									</li>
+									<li>
+										<input class="form-input" type="text" placeholder="City" id="city" name="city">
+									</li>
+									<li>
+										<input class="form-input" type="text" placeholder="State" id="state" name="state" required>
+										<input class="form-input" type="text" pattern="[0-9]{4,}" placeholder="Zipcode" name="zipcode" id="zipcode" required>
+									</li>
+								</ul>	
+							</div>
+						</li>
+						</ul>
+						<div class="reg1-button">
+							<!-- <input class="button-cont" type="submit" value="Continue"> -->
+							<!-- <a href="#" type="submit" class="reg-cont-button">Save</a> -->
+							<input class="reg-cont-button" type="submit" value="Save" style="margin-top:3%;" id="savecontact">
+							<a href="userlanding.html" class="reg-cancel-button">Cancel</a>
+<!-- 							<input class="button-cancel" type="button" value="Cancel"> -->
+						</div>	
+					
+				</form>
+			</div>
+		</div> 
+
+   </body>
+</html>

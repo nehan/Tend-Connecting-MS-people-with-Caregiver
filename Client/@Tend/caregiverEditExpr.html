@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>   		
+   		<title>@Tend</title>
+      	<meta charset="utf-8">
+      		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		
+      	<link rel="stylesheet" href="CSS/styles.css"/>
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script src="javascript/authorization.js"></script>
+		<script src="javascript/main.js"></script>
+		<script src="javascript/caregiver.js"></script>
+		<script src="javascript/config.js"></script>
+		<script src="javascript/caregiveredit.js"></script>
+		   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+   </head>
+   <!-- <body class="body-class">
+		<div class="main-page">
+			<div class="header">
+				<img src="images/main-logo.png" alt="@Tend-Logo" class="img-logo">
+			 <nav class="nav-top"  style="width:530px;">
+				<a href="caregiverManageRqsts.html">Manage Requests </a>
+				<a href="caregiverCurrJobs.html">Engagements</a>
+				<a href="careGiverviewprofile.html">View Profile</a>
+				<a href="writeQueryForLoggedInSession.html">Contact Us</a>
+				<nav class="left-nav" style="width:100px;">
+					<a class="dropdownMenu" id="dropdownMenu"><span class="userlogout">Smith</span> <img src="images/profile.png"></a>					
+				</nav>
+			  </nav>
+			</div>
+			<div class="dropdown" id="dropdown" style="right:10px;">
+						 <a href="caregiverEditPersonalInfo.html">Edit Profile</a>
+						 <a href="index.html">Logout</a>
+			</div> -->
+			<body class="body-class-user">
+			<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+				  <nav class="nav-top" style="top: 16px;">
+				  
+					<div class="phoneMenu">
+					 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+					   
+				 </div>
+				  </nav>
+			</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" alt="image not found" class="close-menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 65%;">
+					 	   <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" alt="image not found" class="profile_pic"><span id="name_span"> Welcome, John</span></span> </a></li>
+                             <li><a href="caregiverManageRqsts.html">Manage Requests</a></li>
+                           	 <li><a href="caregiverCurrJobs.html">Engagements</a></li>
+                             <li><a href="careGiverviewprofile.html">View Profile</a></li>
+                           	 <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page">
+			<div class="divLefttNav editnav" id="navleft">
+				<nav class="nav-side nav-edit">
+					<ul>
+						<li>
+							<a href="caregiverEditPersonalInfo.html">Personal Info </a>							
+						</li>
+						<li>
+						<hr >
+						</li>
+						
+						<li>
+							<a href="caregiverEditContact.html">Contact</a>						
+						</li>
+						<li>
+						<hr>
+						</li>
+						<li class="active">
+							<a href="caregiverEditExpr.html">Experience</a>						
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditAvailability.html" >Availability</a>
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditBankingDetails.html"> Banking Info </a>						
+						</li>
+						<li>
+						<hr >
+						</li>						
+					</ul>
+			  </nav>
+			</div>
+			<div class="editUserInfoContainer" style="height: 531px;">
+				<a href="#" id="leftmenu"><img src="images/arrow.png"  alt="image not found"  style=" width: 40px; height: 40px; float: left;"></a>
+				<h4 class="register-heading3"  style="left: 32%;">Edit Experience</h4> <br/>
+				<form method="post" id="cg_exp_edit" enctype="multipart/form-data">
+					<ul class="register-list">
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Experience</label>
+							</div>	
+							<div class="reg-long-field4" >
+								<input class="form-input" type="text" value="5 years" name="exp" id="exp" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Pay Rate</label>
+							</div>	
+							<div class="reg-long-field4" >
+								<input class="form-input" type="text" placeholder="e.g. 65 ($/hr)" name="pay_rate" id="pay_rate" required>
+							</div>
+						</li>
+						<li style="    text-align: center;">
+						<div class="reg-align-left3" style="margin-right:0%; margin-left: 28px; width:100%;">
+							<a id="care_resume" href="#" target="_blank" style="margin-right:10px;">View Existing Resume</a>
+							<a id="care_ref" href="#" target="_blank">View Existing References</a>
+						</div>
+					 </li>
+						<li>
+							<div class="reg-align-left4">
+								<label class="register-label">Resume</label>
+							</div>	
+							<div class="reg-long-field4" >
+									<input type="file" name="prof-resume" class="reg-file-upload" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"  id="resume" required>
+							</div>
+						</li>	
+						<li class="reg-reference-li">
+							<div class="reg-align-left4">
+								<label class="register-label">References</label>
+							</div>	
+							<div class="reg-long-field4" >
+									<input type="file" name="prof-ref" class="reg-file-upload" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"  id="references" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left4">
+									<label class="register-label" id="pro">Profession/Skill</label>
+							</div>	
+							<div class="avail-align-right">
+								<ul>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Nurse" checked id="Nurse">
+										<label for="Nurse" class="label-avail">Nurse</label>
+										<input class="checkbox-skill" type="checkbox" name="Physiotherapy" id="Physiotherapy">
+										<label for="Physiotherapy" class="label-avail">Physiotherapy</label>
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Yoga" id="Yoga">
+										<label for="Yoga" class="label-avail">Yoga;&nbsp;</label>
+										<input class="checkbox-skill" type="checkbox" name="Counselor" id="Counselor">	
+										<label for="Counselor" class="label-avail">Counselor</label>									
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Alternative Medicine" checked id="Alternative_Medicine">
+										<label for="Alternative_Medicine" class="label-avail">Alternative Medicine</label>								
+									</li>	
+								</ul>
+							</div>
+						</li>
+						</ul>
+						<div class="reg3-button">
+							<input type="submit" class="reg-cont-button" value="Save" style="margin-top:3%">
+							<a href="careGiverviewprofile.html" class="reg-cancel-button">Cancel</a>
+						</div>
+						
+					
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

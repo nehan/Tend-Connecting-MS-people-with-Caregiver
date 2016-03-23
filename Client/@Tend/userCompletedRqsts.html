@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+   		<title>@Tend</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	      <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+	    <link rel="stylesheet" href="CSS/styles.css"/>
+	    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script src ="javascript/authorization.js"></script>
+	    <script src="javascript/main.js"></script>
+	    <script src="javascript/config.js"></script>
+		<script src="javascript/userCompletedRequests.js"></script>
+   </head>
+  <!-- <body class="body-class">
+		<div class="main-page">
+			<div class="header">
+				<img src="images/main-logo.png" alt="@Tend-Logo" class="img-logo">
+			  	<nav class="nav-top">
+					<a href="userlanding.html">Caregiver Search</a>
+					<a href="userviewprofile.html">View Profile</a>
+					<a href="writeUserQueryForLoggedInSession.html">Contact Us</a>
+					
+					<nav class="left-nav">
+						<a class="dropdownMenu" id="dropdownMenu"><span class="userlogout">John</span> <img src="images/profile.png"></a>
+						
+					</nav>	
+
+				</nav>
+			  
+			</div>
+			<div class="dropdown" id="dropdown">
+				<a href="userEditPersonalDetails.html">Edit Profile</a>
+				<a href="index.html">Logout</a>
+			</div>
+			<div class="divLefttNav" id="navleft">
+				<nav class="nav-side">
+					<ul>
+
+						<li >
+							<a href="userCurrRqsts.html">Current</a>
+							
+						</li>
+						<hr>
+						<li >
+							<a href="userPendingRqst.html">Pending Approval</a>
+						
+						</li>
+						<hr>
+						<li >
+							<a href="userFutureRqsts.html">Upcoming</a>
+						
+						</li>
+						<hr>
+						<li class="active">
+							<a href="userCompletedRqsts.html">Completed</a>
+						
+						</li>
+					</ul>
+				</nav>
+			</div>-->
+			<body class="body-class-user">
+				<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2" >@Tend</label>
+			
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+		  </nav>
+			</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="close"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 65%;">
+					 	   <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="profile"><span id="name_span"> Welcome, John</span></span> </a></li>
+					 	    <li><a href="userlanding.html">Caregiver Search</a></li>
+					 	    <li><a href="userviewprofile.html">View Profile</a></li>
+                            <li><a href="userEditPersonalDetails.html">Edit Profile</a></li>
+                            <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeUserQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="divLefttNav editnav" id="navleft">
+				<nav class="nav-side nav-edit">
+					<ul>
+
+						<li>
+							<a href="userCurrRqsts.html">Current</a>
+							<hr>
+						</li>
+						
+						<li >
+							<a href="userPendingRqst.html">Pending Approval</a>
+							<hr>
+							
+						</li>
+					
+						<li >
+							<a href="userFutureRqsts.html">Upcoming</a>
+							<hr>
+						</li>
+						
+						<li class="active">
+							<a href="userCompletedRqsts.html">Completed</a>
+						
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="editUserInfoContainer">
+				<a href="#" id="leftmenu"><img src="images/arrow.png" style=" width: 40px; height: 40px; float: left;" alt="arrow"></a>
+				<h4 class="register-heading" style="left:24%;"> Completed Requests </h4> <br/>
+				<h3 class="emergency-h3"> These are the caregivers you had engaged in the past</h3>
+						<ul class="userreq-register-list" style="    display: inline-flex;    width: 100%;">
+					<li><div class="line-top" style="left: 0;"></div></li>
+					<li style="width: 100px;left:10px;">
+						<label class="lblemergency">Name </label>
+				    </li>
+				    	
+				    <li style="width: 100px;">
+				    	<label class="lblemergency">Start Date</label>
+				    </li>
+
+				    <li style="width:100px;">
+				    	<label class="lblemergency">End Date</label>
+				    </li>
+
+				    <li style="width: 100px;">
+				    	<label class="lblemergency">Weekdays</label>
+				    </li>
+				    <li>
+				    	<label class="lblemergency">Hours/day</label>
+				    </li>
+				    <li><div class="line-bottom"  style="left: 0;"></div></li>
+				</ul>
+
+				
+				<ul class="userreq-register-list" style="display: inline-flex;" id="user_compl_req">
+					
+					<li style="width:120px;">
+						<label class="lblemergency lighter">Jack Smith</label>
+				    </li>
+				    	
+				    <li style="width: 120px;">
+				    	<label class="lblemergency lighter">01/01/16</label>
+				    </li>
+
+				    <li style="width: 130px;">
+				    	<label class="lblemergency lighter">03/30/16</label>
+				    </li>
+
+				    <li style="width:130px;">
+				    	<label class="lblemergency lighter">Wed</label>
+				    </li>
+				    <li style="width:60px;">
+				    	<label class="lblemergency lighter">8</label>
+				    </li>
+				     <li style="width: 120px;">
+
+				    	<a href="writecaregiverreview.html" class="cancelJob"><img src="images/review.png" class="review-icon" alt="review"></a>
+				    </li>
+				</ul>	
+			</div>
+			
+	</div>
+   </body>
+</html>

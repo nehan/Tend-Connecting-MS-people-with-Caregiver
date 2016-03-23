@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+   		<title>@Tend</title>
+      	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+      	<link rel="stylesheet" href="CSS/styles.css"/>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+		 <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+		<script src="javascript/caregiver.js"></script>
+		<script src="javascript/main.js"></script>
+		<script src="javascript/signup.js"></script>
+   </head>
+   <body class="body-class">
+		<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+			 <a href="login.html" class="login-btn">Sign In</a>
+			  </nav>
+			</div>
+			<nav class="content">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" alt="image not found" class="close-menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul">
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="search-sched-div" style="height:475px;">
+				<h2 class="register-heading3">Caregiver Registration - Experience</h2> <br/>
+				<form method="post" id="targetcaregiver" enctype="multipart/form-data" >
+					<ul class="register-list-2">
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Experience</label>
+							</div>	
+							<div class="reg-long-field4" >
+								<input class="form-input" type="text" placeholder="e.g. 5" name="exp" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Pay Rate</label>
+							</div>	
+							<div class="reg-long-field4" >
+								<input class="form-input" type="text" placeholder="e.g. 65 ($/hr)" name="pay_rate" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left4">
+								<label class="register-label">Resume</label>
+							</div>	
+							<div class="reg-long-field4" >
+									<input type="file" name="prof-resume" class="reg-file-upload" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"  id="resume" required>
+							</div>
+						</li>	
+						<li>
+							<div class="reg-align-left4">
+								<label class="register-label">References</label>
+							</div>	
+							<div class="reg-long-field4" >
+									<input type="file" name="prof-ref" class="reg-file-upload" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" id="references" required>
+							</div>
+							<!-- <div class="reg-align-right-textarea">
+								<textarea name="references" class="reg-textarea-exp" placeholder="Kindly provide two references"></textarea>
+							</div> -->
+						</li>
+						<li>
+							<div class="reg-align-left4">
+									<label class="register-label" id="pro">Profession/Skill</label>
+							</div>	
+							<div class="avail-align-right">
+								<ul>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Nurse" id="Nurse">
+										<label for="Nurse" class="label-avail">Nurse</label>
+										<input class="checkbox-skill" type="checkbox" name="Physiotherapy" id="Physiotherapy" >
+										<label for="Physiotherapy" class="label-avail">Physiotherapy</label>
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Yoga" id="Yoga">
+										<label for="Yoga" class="label-avail">Yoga;&nbsp;</label>
+										<input class="checkbox-skill" type="checkbox" name="Counselor" id="Counselor">	
+										<label for="Counselor" class="label-avail">Counselor</label>									
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Alternative_Medicine" id="Alternative_Medicine">
+										<label for="Alternative_Medicine" class="label-avail">Alternative Medicine</label>								
+									</li>	
+								</ul>
+							</div>
+						</li>
+						</ul>
+						
+						<div class="reg3-button">
+							<!--<a href="caregiverreg3.html" type="submit" class="reg-cont-button">Continue</a>-->
+							<input class="reg-cont-button" type="submit" id="submit" value="Continue">
+							<a href="caregiverregistration.html" class="reg-cancel-button">Back</a>
+						</div>	
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>

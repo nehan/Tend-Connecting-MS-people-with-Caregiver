@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	<title>@Tend</title>
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="images/main-logo-blue.png
+      ">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	  <script src ="javascript/authorization.js"></script>
+      <script src="javascript/datescript.js"></script>
+      <script src="javascript/main.js"></script>
+      <link rel="stylesheet" href="CSS/styles.css"/>
+      <script src="javascript/config.js"></script>
+      <script src="javascript/review.js"></script>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+   </head>
+   <!-- <body class="body-class">
+		<div class="main-page">
+			<div class="header">
+			  <nav class="nav-top" style="    top: 10px;    width: 550px;" >
+			    <a href="userCurrRqsts.html">Manage Requests </a>
+				<a href="userlanding.html">Caregiver Search</a>
+				<a href="userviewprofile.html">View Profile</a>
+				<a href="writeUserQueryForLoggedInSession.html">Contact Us</a>
+				
+				<nav class="left-nav">
+					<a class="dropdownMenu" id="dropdownMenu"><span class="userlogout">John</span> <img src="images/profile.png"></a>
+				</nav>	
+
+			  </nav>
+			  
+			</div>
+			<div class="dropdown" id="dropdown">
+						 <a href="userEditPersonalDetails.html">Edit Profile</a>
+						 <a href="index.html">Logout</a>
+			</div> -->
+<body class="body-class-user">
+	<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+		  </nav>
+	</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 55%;">
+					 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="profile">Welcome, John</span> </a></li>
+                            <li><a href="userlanding.html">Caregiver Search</a></li>
+                            <li><a href="userEditPersonalDetails.html">Edit Profile</a></li>
+                            <li><a href="userCurrRqsts.html">Manage Requests</a></li>
+                            <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeUserQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="search-sched-div" style="height: 445px;">
+				<h2>Share Your Review</h2>
+				<!-- <h4 class="caregiver-review-h4"> Write Your Review Here</h4> <br/> -->
+				<form id="user_cg_review" method="post">
+					<ul class="register-list" style="width: 77%; margin-top: 2%; margin-left:10%;">
+							
+						<li>
+							
+							<label class="col-label text-right" style="width:40%; left:40px;">Rate your caregiver</label>
+							
+							<div class="ratings">
+							  <input type="radio" id="star5" name="rating" value="5" />
+					          <label for="star5" title="text">5 stars</label>
+					          <input type="radio" id="star4" name="rating" value="4" />
+					          <label for="star4" title="text">4 stars</label>
+					          <input type="radio" id="star3" name="rating" value="3" />
+					          <label for="star3" title="text">3 stars</label>
+					          <input type="radio" id="star2" name="rating" value="2" />
+					          <label for="star2" title="text">2 stars</label>
+					          <input type="radio" id="star1" name="rating" value="1" />
+					          <label for="star1" title="text">1 star</label>
+							</div>
+						</li>
+					
+						<li>
+							<!-- <div class="reg-align-left5" > -->
+							<label class="col-label text-right" style="width:40%; left:40px;">Review</label>
+							<!-- </div>	 -->
+							<div class="col-long-field" style="left:36px;">
+								<textarea placeholder="Write your review here..." class="form-input"  style="height: 93px; margin-left: 6%;" name="review" required></textarea>	
+								
+							</div>
+				       </li>
+					</ul>
+						<div class="search-button">
+							<input class="button-sub" type="submit" style="left: 27%;" value="Submit" id="submitReview">
+							<a href="userCurrRqsts.html" class="reg-cancel-button" style="margin-left: 4%;">Back</a>
+						</div>	
+					
+				</form>	
+				</div>
+
+
+		</div>	
+	
+		
+   </body>
+   </html>	

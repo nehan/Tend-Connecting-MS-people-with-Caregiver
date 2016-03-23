@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <title>@Tend</title>
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="images/main-logo-blue.png">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	  <script src="javascript/authorization.js"></script>
+      <script src="javascript/datescript.js"></script>
+      <script src="javascript/search.js"></script>
+      <script src="javascript/config.js"></script>
+      <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="CSS/styles.css"/>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+   </head>
+   <body class="body-class-user">
+	<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+			  <nav class="nav-top" style="top: 16px;">
+			  
+				<div class="phoneMenu">
+				 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+				   
+			 </div>
+		  </nav>
+	</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" class="close-menu" alt="close"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 65%;">
+					 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" class="profile_pic" alt="profile"><span id="name_span"> Welcome, John</span></span> </a></li>
+					 	    <li><a href="userviewprofile.html">View Profile</a></li>
+                            <li><a href="userEditPersonalDetails.html">Edit Profile</a></li>
+                            <li><a href="userCurrRqsts.html">Manage Requests</a></li>
+                            <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeUserQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page"> 
+			<div class="divLeftfilter" id="navleft">
+				<nav class="nav-side">
+					<ul>
+						<li><h2 style="font-size: 18px;padding-left: 20px; margin-top: 0px; margin-bottom: 0px;"> Filter your Results </h2></li>
+
+						 <li class="active">
+						   <label class="label-main-2 text-right" style="width: 75%;">Caregiver Name</label>
+							<div class="col-long-field-2" >
+								<input class="form-input" type="text" id="cgname" placeholder="type name here..">
+							</div>				
+						</li>
+						
+						<li >
+							
+							<label class="label-main text-right" id="tar" style="text-align: left; width: 81%;">Days of the week </label>
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="mon">
+									<span>Mon</span>
+							</div>		
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="tue">
+									<span>Tue</span>
+							</div>
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="wed">
+									<span>Wed</span>
+							</div>
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="thu">
+									<span>Thu</span>
+							</div>
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="fri">
+									<span>Fri&nbsp;</span>
+							</div>
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="sat">
+									<span>Sat</span>
+							</div>							
+							<div class="col-day-field" >
+									<input class="form-input-day" type="checkbox" id="sun">
+									<span>Sun</span>
+							</div>
+											
+						</li>
+						
+						<li>
+							<div class="align-left" style="width: 100%;">
+								<label class="label-main text-left">Maximum Rate/Hour</label>
+							</div>	
+							
+							<div class="col-range-field ">
+								<input class="form-input-range" type="range" min="10" max="150" value="10" step="1" oninput="outputUpdate(value)">
+								<output for="range" id="range">10</output>
+								<script>
+									function outputUpdate(range) {
+										document.querySelector('#range').value = range;
+									}
+								</script>
+							</div>					
+						</li>
+						<li>
+
+						<input type="submit" value="Filter" class="filter" id="filter"> 
+						
+						</li>
+																	
+					</ul>
+				</nav>
+			</div>	
+			<form  method="post" id="user_landing">
+			<div class="search-criteria">
+				<h2> Search Caregiver</h2>
+			   
+					
+							<label class="label-main text-right" style="width: 13%;">Start Date</label>
+							<div class="col-long-field" >
+								<input class="form-input date-picker" name="start_date" id="sd" type="text" placeholder="MM/DD/YYYY" style="bottom: 18px;" required>
+							</div>
+							<label class="label-main text-right" style="width: 13%;">End Date</label>
+							<div class="col-long-field" >
+								<input class="form-input date-picker" name="end_date" id="ed" type="text" placeholder="MM/DD/YYYY" style="bottom: 18px;"  required>
+							</div>
+							<div class="search-button" >
+							<input class="button-search" type="submit" value="Search" style="margin-top:0;left:0;"> 
+						</div>	
+									
+				
+			<div class="advance-search-data">
+					<ul class="search-items">
+						<li class="main-li">
+							<div class="align-left" style="width: 21%;">
+								<label class="label-main text-left" id="pro">Type of Assistance</label>
+							</div>	
+							<div class="align-right" style="width: 69%;">
+								<ul>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Nurse" id="Nurse">
+										<label for="Nurse" class="label-prof">Nurse</label>
+										<input class="checkbox-skill" type="checkbox" name="Physio" id="Physiotherapy">
+										<label for="Physiotherapy" class="label-prof">Physiotheraphy</label>
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Yoga" id="Yoga">
+										<label for="Yoga" class="label-prof">Yoga&nbsp;</label>
+										<input class="checkbox-skill" type="checkbox" name="AltMed" id="Alternative_Medicine">
+										<label for="Alternative_Medicine" class="label-prof">Alternative Medicine</label>
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Counselor" id="Counselor">	
+										<label for="Counselor" class="label-prof">Counselor</label>								
+									</li>
+								</ul>
+							</div>	
+				
+						</li>
+						<li class="main-li">
+								<div class="align-left" style="width: 19%;">
+								<label class="label-main text-left">Gender</label>
+							</div>	
+							<div class="col-range-field" >
+								<input class="form-input-radio" type="radio" name="gender" value="Male" required>Male
+								<input class="form-input-radio" type="radio" name="gender" value="Female" required>Female
+								<input class="form-input-radio" type="radio" name="gender" value="No_Preference" checked="checked" required>No Preference
+							</div>
+						</li>	
+
+					</ul>	
+			</div>	
+			<div class="advance-search">
+				<button id="toggle-advanced" class="toggle-advanced">Advanced Search</button>
+				
+			</div>	
+			</div>
+			</form>
+			<div class="search-result" id="search_display">
+				
+				<!-- <ul class="resultul">
+					<li>
+						<ul class="resultul">
+							<li class="result-align-left"><h2 class="h2-result">John Doe</h2></li>
+							<li class="result-align-left"><span><img src="images/profile.png" class="result-align-left profile-img"><p class="result-align-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span> </li>
+							<li class="result-align-left"><input type="button" value="Request" class="result-btn-class"><input type="button" id ="viewCareGiverReview" value="View Reviews" class="result-btn-class"></li>
+						</ul>
+					</li>
+					<li>
+						<ul class="resultul">
+							<li class="result-align-left"><h2 class="h2-result">Peter John</h2></li>
+							<li class="result-align-left"><span><img src="images/profile.png" class="result-align-left profile-img"><p class="result-align-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></span> </li>
+							<li class="result-align-left"><input type="button" value="Request" class="result-btn-class"><input type="button" id ="viewCareGiverReview1" value="View Reviews" class="result-btn-class"></li>
+						</ul>
+					</li>
+				</ul> -->
+			
+			</div>
+		</div>
+	   </body>
+</html>

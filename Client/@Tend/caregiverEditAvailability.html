@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>   		
+   		<title>@Tend</title>
+      	<meta charset="utf-8">
+      		<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+        <link rel="stylesheet" href="CSS/styles.css"/>
+
+      	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<script src="javascript/main.js"></script>
+      	<script src="javascript/datescript.js"></script>      	
+      	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+		<script src ="javascript/authorization.js"></script>
+		<script src="javascript/caregiver.js"></script>
+		<script src="javascript/config.js"></script>
+		<script src="javascript/caregiveredit.js"></script>
+		<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+   </head>
+ 
+			<body class="body-class-user">
+			<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+				  <nav class="nav-top" style="top: 16px;">
+				  
+					<div class="phoneMenu">
+					 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+					   
+				 </div>
+				  </nav>
+			</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" alt="image not found" class="close-menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width:65%;">
+					 	   <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" alt="image not found" class="profile_pic"><span id="name_span"> Welcome, John</span></span> </a></li>
+                             <li><a href="caregiverManageRqsts.html">Manage Requests</a></li>
+                           	 <li><a href="caregiverCurrJobs.html">Engagements</a></li>
+                             <li><a href="careGiverviewprofile.html">View Profile</a></li>
+                           	 <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page">
+			<div class="divLefttNav editnav" id="navleft" >
+				<nav class="nav-side nav-edit">
+					<ul>
+						<li>
+							<a href="caregiverEditPersonalInfo.html">Personal Info </a>							
+						</li>
+						<li>
+						<hr >
+						</li>
+						
+						<li>
+							<a href="caregiverEditContact.html">Contact</a>						
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditExpr.html">Experience</a>						
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li class="active">
+							<a href="caregiverEditAvailability.html" >Availability</a>
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditBankingDetails.html"> Banking Info </a>						
+						</li>
+						<li>
+						<hr >
+						</li>						
+					</ul>
+			  </nav>
+			</div>
+			<div class="editUserInfoContainer" >
+				<a href="#" id="leftmenu"><img src="images/arrow.png" alt="image not found" style=" width: 40px; height: 40px; float: left;"></a>
+				<h4 class="register-heading2" style="left: 27%">Edit - Availability</h4> <br/>
+				<form  method="post" id="editavail">
+					<ul class="register-list">
+						
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">Start Date</label>
+							</div>
+							<div class="reg-long-field2" >
+								<input class="form-input date-picker" type="text" placeholder="MM/DD/YYYY" id="start_date" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label">End Date</label>
+							</div>
+							<div class="reg-long-field2" >
+								<input class="form-input date-picker" type="text" placeholder="MM/DD/YYYY" id="end_date" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+									<label class="register-label" id="tar">Days of the week</label>
+							</div>	
+							<div class="avail-align-right">
+								<ul>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Mon" checked id="mon">
+										<label for="mon" class="label-avail">Mon</label>
+										<input class="checkbox-skill" type="checkbox" name="Tue" id="tue">
+										<label for="tue" class="label-avail">Tue</label>
+										<input class="checkbox-skill" type="checkbox" name="Wed" id="wed">
+										<label for="wed" class="label-avail">Wed</label>
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Thu" checked id="thu">
+										<label for="thu" class="label-avail">Thu;&nbsp;</label>
+										<input class="checkbox-skill" type="checkbox" name="Fri" id="fri">
+										<label for="fri" class="label-avail">Fri&nbsp;&nbsp;</label>
+										<input class="checkbox-skill" type="checkbox" name="Sat" id="sat">
+										<label for="sat" class="label-avail">Sat</label>										
+									</li>
+									<li>
+										<input class="checkbox-skill" type="checkbox" name="Sun" checked id="sun">	
+										<label for="sun" class="label-avail">Sun</label>								
+									</li>	
+								</ul>
+							</div>
+						</li>
+						</ul>
+						<div class="reg1-button">
+							<input type="submit" class="reg-cont-button" value="Save" style="margin-top:3%">
+							<a href="careGiverviewprofile.html" class="reg-cancel-button">Cancel</a>
+						</div>
+		
+					
+				</form>
+			</div>
+	    </div>	
+	</body>
+</html>

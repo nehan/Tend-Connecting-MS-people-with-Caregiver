@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   		<title>@Tend</title>		
+   			<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+      	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		
+      	<link rel="stylesheet" href="CSS/styles.css"/>
+      	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+		<script src ="javascript/authorization.js"></script>
+		<script src="javascript/main.js"></script>
+		<script src="javascript/caregiver.js"></script>
+      	<script src="javascript/datescript.js"></script> 
+      	<script src="javascript/config.js"></script>     	
+      		<script src="javascript/caregiveredit.js"></script>     	
+      	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      	   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+   </head>
+ 
+			<body class="body-class-user">
+			<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+				  <nav class="nav-top" style="top: 16px;">
+				  
+					<div class="phoneMenu">
+					 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+					   
+				 </div>
+				  </nav>
+			</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" alt="image not found" class="close-menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 65%;">
+					 	      <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" alt="image not found" class="profile_pic"><span id="name_span"> Welcome, John</span></span> </a></li>
+                             <li><a href="caregiverManageRqsts.html">Manage Requests</a></li>
+                           	 <li><a href="caregiverCurrJobs.html">Engagements</a></li>
+                             <li><a href="careGiverviewprofile.html">View Profile</a></li>
+                           	 <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page">
+			<div class="divLefttNav editnav" id="navleft" >
+				<nav class="nav-side nav-edit">
+					<ul>
+						<li>
+							<a href="caregiverEditPersonalInfo.html">Personal Info </a>							
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditContact.html">Contact</a>						
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditExpr.html">Experience</a>						
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li>
+							<a href="caregiverEditAvailability.html" >Availability</a>
+						</li>
+						<li>
+						<hr >
+						</li>
+						<li class="active">
+							<a href="caregiverEditBankingDetails.html"> Banking Info </a>						
+						</li>
+						<li>
+						<hr >
+						</li>						
+					</ul>
+			  </nav>
+			</div>
+			<div class="editUserInfoContainer" >
+				<a href="#" id="leftmenu"><img src="images/arrow.png" alt="image not found" style="width: 40px; height: 40px; float: left;"></a>
+				<h4 class="register-heading2" style="left: 27%;"> Bank Account Details</h4> <br/>
+				<form  method="post" id="cg_bank">
+					<ul class="register-list">
+						<li>
+							<div class="reg-align-left3" >
+								<label class="register-label" style="top:10%">Account Number</label>
+							</div>
+							<div class="reg-long-field2" style="width:40%" >
+								<input class="form-input" type="text" name="account_no" title="Account Number" value="1234567890" id="account_no" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label" style="top:10%">Routing Number</label>
+							</div>
+							<div class="reg-long-field2" style="width:40%"  >
+								<input class="form-input" type="text" name="route" id="route" title="Routing Number" value="123212432" required>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3">
+								<label class="register-label" style="top:10%">Account Holder Name</label>
+							</div>
+							<div class="reg-long-field2" style="width:40%"  >
+								<input class="form-input" type="text" name="name" title="Account Holder Name" value="Smith John" id="name" required>
+							</div>
+						</li>
+					</ul>
+						<div class="reg1-button">
+							<input type="submit" class="reg-cont-button" value="Save" style="margin-top:3%">
+							<a href="careGiverviewprofile.html" class="reg-cancel-button">Cancel</a>
+						</div>
+						
+					
+				</form>
+			</div>
+		</div>
+	
+	</body>
+</html>

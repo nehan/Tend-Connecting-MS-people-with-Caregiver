@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <title>
+         @Tend
+      </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	  	<link rel="icon" type="image/png" href="images/main-logo-blue.png">
+      <link rel="stylesheet" href="CSS/styles.css"/>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+	  <script src ="javascript/authorization.js"></script>
+      <script src="javascript/main.js"></script>
+	  <script src="javascript/careGiverViewDetails.js"></script>
+	  <script src="javascript/config.js"></script>
+      	   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css">
+   </head>
+   <!-- <body class="body-class">
+		<div class="main-page">
+			<div class="header">
+				<img src="images/main-logo.png" alt="@Tend-Logo" class="img-logo">
+			  <nav class="nav-top">
+				<a href="caregiverManageRqsts.html">Manage Requests </a>
+				<a href="caregiverCurrJobs.html">Engagements</a>
+				<a href="writeQueryForLoggedInSession.html">Contact Us</a>
+				
+				<nav class="left-nav" style="width: 100px;">
+					<a class="dropdownMenu" id="dropdownMenu"><span class="userlogout">Smith</span> <img src="images/profile.png"></a>					
+				</nav>	
+			  </nav>			  
+			</div>
+			<div class="dropdown" id="dropdown">
+						 <a href="caregiverEditPersonalInfo.html">Edit Profile</a>
+						 <a href="index.html">Logout</a>
+			</div> -->
+			<body class="body-class-user">
+			<div class="header-after">
+			<img src="images/main-logo-blue.png" alt="@Tend-Logo" class="img-logo">
+			<label class="site-name2">@Tend</label>
+				  <nav class="nav-top" style="top: 16px;">
+				  
+					<div class="phoneMenu">
+					 <a href="#" class="menuopen-inside"><img src="images/menublack.png" alt="Menu" class="menu_btn2"> </a>
+					   
+				 </div>
+				  </nav>
+			</div>
+			<nav class="content-user">
+				<div>
+					<ul class="menuinline">
+						<li><a href="#" class="closePopMenu">Close<img src="images/closewhite.png" alt="image not found" class="close-menu"> </a></li>
+						
+					</ul>	
+					 <ul class="menuul" style="width: 65%;">
+					 	    <li class="welcome"><a class="dropdownMenu" id="dropdownMenu"><span class="userlogout"><img id="profile_pic" src="images/profile.png" alt="image not found" class="profile_pic">Welcome, Smith</span> </a></li>
+                             <li><a href="caregiverManageRqsts.html">Manage Requests</a></li>
+                           	 <li><a href="caregiverCurrJobs.html">Engagements</a></li>
+                             <li><a href="caregiverEditPersonalInfo.html">Edit Profile</a></li>
+                           	 <li><a href="index.html" id="sign_out">Sign Out</a></li>
+
+        			</ul>
+        			<ul class="menuul">
+        					<li><a href="index.html">Home </a></li> 
+        					<li><a href="howitworks.html">How It Works </a></li> 
+        					<li><a href="aboutus.html">About Us </a></li> 
+        					<li><a href="writeQueryForLoggedInSession.html"> Contact Us</a></li> 
+        			</ul>	
+        			<ul class="menuul menuLogo">
+        				<li><img src="images/main-logo-blue.png" alt="@Tend-Logo" class="onMenu"></li>
+        			</ul>	
+			     </div>
+			 </nav>  
+			<div class="later-page">
+			<div class="search-sched-div" style="height:100%;">
+				<h4 class="register-heading" style="left: 40%;"> Your Profile</h4> <br/>
+				<ul class="register-list">
+						<li>
+							<div class="reg-align-left">
+								<img src="images/profile.png" class="view-prof-img" id="careImg" alt="your-image"><br/>								
+							</div>
+							<div class="view-align-right">
+							<label class="view-label" id="careName">Smith John </label><br/>
+								<p style="font-weight:normal;" class="view-profile-p" id="care_about_me">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><br/>							     
+							</div>
+						</li>						
+				</ul>
+				
+				<ul class="register-list" style="margin-top:3%;">
+				<li>					
+				<h4 class="view-heading" style="left:0px;font-size:16px; margin-top:2%"> Experience Background</h4>
+			 
+					<li >
+			     		<div class="reg-align-left3" style="margin-top: 6px;">
+							<label class="register-label ">Experience</label>
+						</div>
+						<div class="reg-long-field2" style="margin-top: 5px;" >
+							<label class="register-label view-lbl" id="care_expr"> 3 years and 4 Months</label>								
+						</div>
+					</li>
+					<li>
+						<div class="reg-align-left3" style="margin-top: 0px;">
+							<label class="register-label ">Profession/Skills</label>
+						</div>
+						<div class="reg-long-field2" style="margin-top: 0px;">
+							<div class="register-label view-lbl" id="care_skill" > Nurse, Yoga Instructor</div>								
+						</div>
+					</li>
+					<li>
+						<div class="reg-align-left3" style="margin-right:10%; margin-left: 28px; width:100%;">
+							<a id="care_resume" href="http://localhost/tend_services/upload/references/FroYoRun2016.pdf" target="_blank" >View Resume</a>
+							<a id="care_ref" href="http://localhost/tend_services/upload/references/FroYoRun2016.pdf" target="_blank">View References</a>
+						</div>
+					</li>
+					<li>
+				<h4 class="view-heading" style="left:0px;font-size:16px; margin-top:2%"> Availability</h4> 
+				</li>
+					<!-- <li>
+			     		<div class="reg-align-left3" style="margin-top: 6px;">
+							<label class="register-label ">Time Committment</label>
+						</div>
+						<div class="reg-long-field2" style="margin-top: 5px;">
+							<label class="register-label view-lbl"> Part Time</label>								
+						</div>
+					</li> -->
+					<li>
+						<div class="reg-align-left3" style="margin-top: 0px;">
+							<label class="register-label ">Start Date - EndDate</label>
+						</div>
+						<div class="reg-long-field2" style="margin-top: 0px;">
+							<label class="register-label view-lbl" id="care_date"> 2/2/2016 - 6/2/2016</label>								
+						</div>
+					</li>					
+					<li>
+						<div class="reg-align-left3" style="margin-top: 0px;">
+							<label class="register-label ">Available Days</label>
+						</div>
+						<div class="reg-long-field2" style="margin-top: 0px;">
+							<label class="register-label view-lbl" id="care_days"> Mon,Wed,Fri</label>								
+						</div>
+					</li>
+					<li>
+				<h4 class="view-heading" style="left:0px;font-size:16px; margin-top:2%"> Contact Details</h4> 
+				</li>
+						<li>
+			     			<div class="reg-align-left3" style="margin-top: 6px;">
+								<label class="register-label ">Address</label>
+							</div>
+							<div class="reg-long-field2" style="margin-top: 5px;">
+								<label class="register-label view-lbl" id="care_addr"> 3500, Granada Ave,Apt-455 Santa Clara CA-95051</label>								
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3" style="margin-top: 0px;">
+								<label class="register-label">Mobile</label>
+							</div>
+							<div class="reg-long-field2" style="margin-top: 0px;">
+								<label class="register-label view-lbl" id="care_cell">(+1) 408-777-8989</label>
+							</div>
+						</li>
+						<li>
+							<div class="reg-align-left3" style="margin-top: 0px;">
+								<label class="register-label">Home</label>
+							</div>
+							<div class="reg-long-field2" style="margin-top: 0px;">
+								<label class="register-label view-lbl" id="care_home">(+1) 666-777-8989</label>
+							</div>
+						</li>	
+							</ul>					
+					<!-- <hr class="view-hr" style="top: 7px;"> -->
+						<div class="reg1-button">
+							<a href="caregiverEditPersonalInfo.html" class="reg-cont-button">Edit</a>
+							<a href="#" class="reg-cancel-button" id="backtocaregiver">Back</a>
+						</div>
+				
+			
+			</div>
+			
+		</div>		
+							
+	</body>
